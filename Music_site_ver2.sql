@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Artists (
 CREATE TABLE IF NOT EXISTS Albums (
 	album_id SERIAL PRIMARY KEY,
 	name VARCHAR(60) NOT NULL,
-	artist INTEGER REFERENCES Artists(artist_id),
+--	artist INTEGER REFERENCES Artists(artist_id),
 	year_of_production INTEGER CHECK(1950 <= year_of_production AND year_of_production <=2023)
 );
 
