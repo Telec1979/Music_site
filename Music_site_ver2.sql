@@ -5,8 +5,8 @@ CREATE TABLE IF NOT EXISTS Genres (
 
 CREATE TABLE IF NOT EXISTS Artists (
 	artist_id SERIAL PRIMARY KEY,
-	name VARCHAR(60) NOT NULL,
-	genre INTEGER REFERENCES Genres(genre_id)
+	name VARCHAR(60) NOT NULL
+--	genre INTEGER REFERENCES Genres(genre_id)
 );
 
 CREATE TABLE IF NOT EXISTS Albums (
